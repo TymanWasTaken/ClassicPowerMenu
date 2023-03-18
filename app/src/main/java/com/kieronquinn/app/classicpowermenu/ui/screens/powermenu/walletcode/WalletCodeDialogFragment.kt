@@ -152,7 +152,7 @@ class WalletCodeDialogFragment: BaseDialogFragment<FragmentDialogWalletCodeBindi
         setOnClickListener {
             activityStarter.runAfterKeyguardDismissed({
                 startActivity(Intent().apply {
-                    component = GooglePayConstants.WALLET_DEEP_LINK_COMPONENT
+                    action = Intent.ACTION_VIEW
                     data = Uri.parse(String.format(GooglePayConstants.WALLET_DEEP_LINK_VALUABLE, card.valuableId))
                 })
                 true

@@ -56,7 +56,7 @@ class WalletLoyaltyCardViewInfo(private val context: Context, private val loyalt
 
     override fun getPendingIntent(): PendingIntent {
         val intent = Intent().apply {
-            component = GooglePayConstants.WALLET_DEEP_LINK_COMPONENT
+            action = Intent.ACTION_VIEW
             data = Uri.parse(String.format(GooglePayConstants.WALLET_DEEP_LINK_VALUABLE, cardId.substring(3)))
         }
         return PendingIntent.getActivity(context, 0, intent, PendingIntent.FLAG_IMMUTABLE)

@@ -8,7 +8,6 @@ object GooglePayConstants {
 
     const val WALLET_NFC_REL_PACKAGE_NAME = "com.google.android.apps.walletnfcrel"
     const val NBU_PAISA_PACKAGE_NAME = "com.google.android.apps.nbu.paisa.user"
-    val WALLET_DEEP_LINK_COMPONENT = ComponentName(WALLET_NFC_REL_PACKAGE_NAME, "com.google.commerce.tapandpay.android.deeplink.DeepLinkActivity")
     const val WALLET_PREF_NAME = "global_prefs"
     const val WALLET_CURRENT_ACCOUNT_ID_PREF_KEY = "current_account_id"
     const val WALLET_DEEP_LINK_VALUABLE = "https://pay.google.com/gp/v/valuable/%s?vs=gp_lp"
